@@ -1,0 +1,310 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN name:EnterForm visibility:public modality:FINAL returnType:kotlin.Unit
+  VALUE_PARAMETER kind:Regular name:$composer index:0 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:1 type:kotlin.Int
+  annotations:
+    Preview(name = <null>, group = <null>, apiLevel = <null>, widthDp = <null>, heightDp = <null>, locale = <null>, fontScale = <null>, showSystemUi = <null>, showBackground = true, backgroundColor = <null>, uiMode = <null>, device = <null>, wallpaper = <null>)
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    BLOCK type=kotlin.Unit origin=null
+      SET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Unit origin=null
+        CALL 'public abstract fun startRestartGroup (key: kotlin.Int): androidx.compose.runtime.Composer declared in androidx.compose.runtime.Composer' type=androidx.compose.runtime.Composer origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+          ARG key: CONST Int type=kotlin.Int value=-1038612769
+      CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+        ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+        ARG sourceInformation: CONST String type=kotlin.String value="C(EnterForm)54@2060L31,55@2112L31,56@2149L1396:EntryActivity.kt#miyc0s"
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: GET_VAR '$changed: kotlin.Int declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Int origin=null
+              ARG arg1: CONST Int type=kotlin.Int value=0
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=-1038612769
+                ARG dirty1: GET_VAR '$changed: kotlin.Int declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="com.example.courseapplication.EnterForm (EntryActivity.kt:51)"
+          VAR name:contx type:android.content.Context [val]
+            BLOCK type=android.content.Context origin=null
+              VAR IR_TEMPORARY_VARIABLE name:tmp0 type:kotlin.Any? [val]
+                BLOCK type=com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> origin=null
+                  CLASS GENERATED_PROPERTY_REFERENCE CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.jvm.internal.PropertyReference0Impl]
+                    thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>
+                    CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> [primary]
+                      VALUE_PARAMETER kind:Regular name:receiver index:0 type:kotlin.Any?
+                      BLOCK_BODY
+                        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (receiver: kotlin.Any?, owner: java.lang.Class<*>, name: kotlin.String, signature: kotlin.String, flags: kotlin.Int) declared in kotlin.jvm.internal.PropertyReference0Impl'
+                          ARG receiver: GET_VAR 'receiver: kotlin.Any? declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>.<init>' type=kotlin.Any? origin=null
+                          ARG owner: CALL 'public final fun <get-java> ($receiver: kotlin.reflect.KClass<*>): java.lang.Class<*> declared in kotlin.jvm.JvmClassMappingKt' type=java.lang.Class<*> origin=GET_PROPERTY
+                            ARG $receiver: CLASS_REFERENCE 'CLASS IR_EXTERNAL_DECLARATION_STUB INTERFACE name:KClass modality:ABSTRACT visibility:public superTypes:[kotlin.reflect.KDeclarationContainer; kotlin.reflect.KAnnotatedElement; kotlin.reflect.KClassifier]' type=kotlin.reflect.KClass<*>
+                          ARG name: CONST String type=kotlin.String value="current"
+                          ARG signature: CALL 'public final fun <signature-string> (v: kotlin.Any?): kotlin.String declared in kotlin.jvm.internal' type=kotlin.String origin=null
+                            ARG v: FUNCTION_REFERENCE 'public final fun <get-current> ($composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): T of androidx.compose.runtime.ProvidableCompositionLocal [inline,fake_override] declared in androidx.compose.runtime.ProvidableCompositionLocal' type=kotlin.reflect.KProperty0<android.content.Context> origin=null reflectionTarget=<same>
+                          ARG flags: CONST Int type=kotlin.Int value=0
+                        BLOCK type=kotlin.Unit origin=null
+                    FUN GENERATED_MEMBER_IN_CALLABLE_REFERENCE name:get visibility:public modality:OPEN returnType:kotlin.Any?
+                      VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>
+                      overridden:
+                        public abstract fun get (): kotlin.Any? declared in kotlin.jvm.internal.PropertyReference0Impl
+                      EXPRESSION_BODY
+                        CALL 'public final fun <get-current> ($composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): T of androidx.compose.runtime.CompositionLocal [inline] declared in androidx.compose.runtime.CompositionLocal' type=T of androidx.compose.runtime.ProvidableCompositionLocal origin=GET_PROPERTY
+                          ARG <this>: TYPE_OP type=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal>
+                            TYPE_OP type=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context>
+                              GET_FIELD 'FIELD name:receiver type:kotlin.Any? visibility:protected declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>' type=kotlin.Any? origin=null
+                                receiver: GET_VAR '<this>: com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>.get' type=com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> origin=null
+                    FUN FAKE_OVERRIDE name:invoke visibility:public modality:FINAL returnType:kotlin.Any? [fake_override]
+                      VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>
+                      overridden:
+                        public final fun invoke (): kotlin.Any? declared in kotlin.jvm.internal.PropertyReference0Impl
+                  CONSTRUCTOR_CALL 'public/*package*/ constructor <init> (receiver: kotlin.Any?) [primary] declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>' type=com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> origin=null
+                    ARG receiver: CALL 'public final fun <get-LocalContext> (): androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context> declared in androidx.compose.ui.platform.AndroidCompositionLocals_androidKt' type=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context> origin=GET_PROPERTY
+              CALL 'public final fun checkNotNull (object: kotlin.Any?, message: kotlin.String): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+                ARG object: GET_VAR 'val tmp0: kotlin.Any? [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Any? origin=null
+                ARG message: CONST String type=kotlin.String value="null cannot be cast to non-null type android.content.Context"
+              TYPE_OP type=android.content.Context? origin=CAST typeOperand=android.content.Context?
+                GET_VAR 'val tmp0: kotlin.Any? [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Any? origin=null
+          COMPOSITE type=kotlin.Unit origin=null
+            VAR name:inter type:kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> [val]
+              CONSTRUCTOR_CALL 'public constructor <init> () declared in kotlin.jvm.internal.Ref.ObjectRef' type=kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> origin=null
+                TYPE_ARG (of class) T: com.example.interaction.InteractionClass
+            SET_FIELD 'FIELD IR_BUILTINS_STUB name:element type:T of kotlin.jvm.internal.Ref.ObjectRef visibility:public declared in kotlin.jvm.internal.Ref.ObjectRef' type=kotlin.Unit origin=null
+              receiver: GET_VAR 'val inter: kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> origin=null
+              value: CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in com.example.interaction.InteractionClass' type=com.example.interaction.InteractionClass origin=null
+          VAR name:email type:androidx.compose.runtime.MutableState<kotlin.String> [val]
+            BLOCK type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+                ARG key: CONST Int type=kotlin.Int value=-1674452770
+                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):EntryActivity.kt#9igjgp"
+              VAR IR_TEMPORARY_VARIABLE name:tmp0_group type:androidx.compose.runtime.MutableState<kotlin.String> [val]
+                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+                  TYPE_ARG T: androidx.compose.runtime.MutableState<kotlin.String>
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+                  ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                  ARG block: BLOCK type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    FUNCTION_REFERENCE 'private final fun EnterForm$lambda$0 (): androidx.compose.runtime.MutableState<kotlin.String> declared in com.example.courseapplication.EntryActivityKt' type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=INLINE_LAMBDA reflectionTarget=null
+              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+              GET_VAR 'val tmp0_group: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+          VAR name:password type:androidx.compose.runtime.MutableState<kotlin.String> [val]
+            BLOCK type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+                ARG key: CONST Int type=kotlin.Int value=-1674451106
+                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):EntryActivity.kt#9igjgp"
+              VAR IR_TEMPORARY_VARIABLE name:tmp1_group type:androidx.compose.runtime.MutableState<kotlin.String> [val]
+                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+                  TYPE_ARG T: androidx.compose.runtime.MutableState<kotlin.String>
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+                  ARG invalid: CONST Boolean type=kotlin.Boolean value=false
+                  ARG block: BLOCK type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    FUNCTION_REFERENCE 'private final fun EnterForm$lambda$1 (): androidx.compose.runtime.MutableState<kotlin.String> declared in com.example.courseapplication.EntryActivityKt' type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=INLINE_LAMBDA reflectionTarget=null
+              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+              GET_VAR 'val tmp1_group: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+          CALL 'public final fun Column (modifier: androidx.compose.ui.Modifier?, verticalArrangement: androidx.compose.foundation.layout.Arrangement.Vertical?, horizontalAlignment: androidx.compose.ui.Alignment.Horizontal?, content: @[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.ColumnKt' type=kotlin.Unit origin=null
+            ARG modifier: CALL 'public final fun padding-3ABfNKs ($this$padding: androidx.compose.ui.Modifier, all: androidx.compose.ui.unit.Dp): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.PaddingKt' type=androidx.compose.ui.Modifier origin=null
+              ARG $this$padding: CALL 'public final fun fillMaxSize$default (<this>: androidx.compose.ui.Modifier, fraction: kotlin.Float, $mask0: kotlin.Int, $handler: kotlin.Any?): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.SizeKt' type=androidx.compose.ui.Modifier origin=DEFAULT_DISPATCH_CALL
+                ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+                ARG fraction: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                  CONST Float type=kotlin.Float value=0.0
+                ARG $mask0: CONST Int type=kotlin.Int value=1
+                ARG $handler: CONST Null type=kotlin.Any? value=null
+              ARG all: CALL 'public final fun <get-dp> (<this>: kotlin.Int): androidx.compose.ui.unit.Dp [inline] declared in androidx.compose.ui.unit.DpKt' type=androidx.compose.ui.unit.Dp origin=GET_PROPERTY
+                ARG <this>: CONST Int type=kotlin.Int value=16
+            ARG verticalArrangement: CALL 'public final fun <get-Center> (): androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical declared in androidx.compose.foundation.layout.Arrangement' type=androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical origin=GET_PROPERTY
+              ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:INSTANCE type:androidx.compose.foundation.layout.Arrangement visibility:public [final,static] declared in androidx.compose.foundation.layout.Arrangement' type=androidx.compose.foundation.layout.Arrangement origin=null
+            ARG horizontalAlignment: CALL 'public final fun <get-CenterHorizontally> (): androidx.compose.ui.Alignment.Horizontal declared in androidx.compose.ui.Alignment.Companion' type=androidx.compose.ui.Alignment.Horizontal origin=GET_PROPERTY
+              ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Alignment.Companion visibility:public [final,static] declared in androidx.compose.ui.Alignment' type=androidx.compose.ui.Alignment.Companion origin=null
+            ARG content: BLOCK type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=LAMBDA
+              COMPOSITE type=kotlin.Unit origin=null
+              FUNCTION_REFERENCE 'private final fun EnterForm$lambda$11 ($this$Column: androidx.compose.foundation.layout.ColumnScope, $email: androidx.compose.runtime.MutableState<kotlin.String>, $password: androidx.compose.runtime.MutableState<kotlin.String>, $inter: kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass>, $contx: android.content.Context, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.Unit declared in com.example.courseapplication.EntryActivityKt' type=@[ExtensionFunctionType] kotlin.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+                ARG $email: GET_VAR 'val email: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+                ARG $password: GET_VAR 'val password: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+                ARG $inter: GET_VAR 'val inter: kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.jvm.internal.Ref.ObjectRef<com.example.interaction.InteractionClass> origin=null
+                ARG $contx: GET_VAR 'val contx: android.content.Context [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=android.content.Context origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=438
+            ARG $default: CONST Int type=kotlin.Int value=0
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+    BLOCK type=kotlin.Unit origin=null
+      BLOCK type=kotlin.Unit origin=FOLDED_SAFE_CALL
+        WHEN type=kotlin.Unit origin=FOLDED_SAFE_CALL
+          BRANCH
+            if: COMPOSITE type=kotlin.Boolean origin=null
+              VAR IR_TEMPORARY_VARIABLE name:tmp2_safe_receiver type:androidx.compose.runtime.ScopeUpdateScope? [val]
+                CALL 'public abstract fun endRestartGroup (): androidx.compose.runtime.ScopeUpdateScope? declared in androidx.compose.runtime.Composer' type=androidx.compose.runtime.ScopeUpdateScope? origin=null
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.Composer? origin=null
+              CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                  ARG arg0: GET_VAR 'val tmp2_safe_receiver: androidx.compose.runtime.ScopeUpdateScope? [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.ScopeUpdateScope? origin=null
+                  ARG arg1: CONST Null type=kotlin.Nothing? value=null
+            then: CALL 'public abstract fun updateScope (block: kotlin.Function2<androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>): kotlin.Unit declared in androidx.compose.runtime.ScopeUpdateScope' type=kotlin.Unit origin=null
+              ARG <this>: GET_VAR 'val tmp2_safe_receiver: androidx.compose.runtime.ScopeUpdateScope? [val] declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=androidx.compose.runtime.ScopeUpdateScope? origin=null
+              ARG block: BLOCK type=kotlin.Function2<androidx.compose.runtime.Composer?, kotlin.Int, kotlin.Unit> origin=LAMBDA
+                COMPOSITE type=kotlin.Unit origin=null
+                CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function2<androidx.compose.runtime.Composer?, kotlin.Int, kotlin.Unit> origin=null
+                  TYPE_ARG T: kotlin.Function2<androidx.compose.runtime.Composer?, kotlin.Int, kotlin.Unit>
+                  ARG dynamicCall: CALL 'public final fun invoke (p0: kotlin.Int): kotlin.Function2<androidx.compose.runtime.Composer?, kotlin.Int, kotlin.Unit> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function2<androidx.compose.runtime.Composer?, kotlin.Int, kotlin.Unit> origin=null
+                    ARG p0: GET_VAR '$changed: kotlin.Int declared in com.example.courseapplication.EntryActivityKt.EnterForm' type=kotlin.Int origin=null
+                  ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                    ARG tag: CONST Int type=kotlin.Int value=6
+                    ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+                    ARG name: CONST String type=kotlin.String value="metafactory"
+                    ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+                    ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+                  ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+                    CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                      ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: P1 of kotlin.Function2, p2: P2 of kotlin.Function2): R of kotlin.Function2 [operator] declared in kotlin.Function2' type=kotlin.Any
+                    RAW_FUNCTION_REFERENCE 'private final fun EnterForm$lambda$12 ($$changed: kotlin.Int, $composer: androidx.compose.runtime.Composer?, $force: kotlin.Int): kotlin.Unit? declared in com.example.courseapplication.EntryActivityKt' type=kotlin.Any
+                    CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                      ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: androidx.compose.runtime.Composer?, p2: kotlin.Int?): kotlin.Unit? [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+          BRANCH
+            if: CONST Boolean type=kotlin.Boolean value=true
+            then: CONST Null type=kotlin.Any? value=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally$lambda$10$compile(IncrementalCompilerRunner.kt:254)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally(IncrementalCompilerRunner.kt:272)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:124)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN GENERATED_MEMBER_IN_CALLABLE_REFERENCE name:get visibility:public modality:OPEN returnType:kotlin.Any?
+  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>
+  overridden:
+    public abstract fun get (): kotlin.Any? declared in kotlin.jvm.internal.PropertyReference0Impl
+  EXPRESSION_BODY
+    CALL 'public final fun <get-current> ($composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): T of androidx.compose.runtime.CompositionLocal [inline] declared in androidx.compose.runtime.CompositionLocal' type=T of androidx.compose.runtime.ProvidableCompositionLocal origin=GET_PROPERTY
+      ARG <this>: TYPE_OP type=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal>
+        TYPE_OP type=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context>
+          GET_FIELD 'FIELD name:receiver type:kotlin.Any? visibility:protected declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>' type=kotlin.Any? origin=null
+            receiver: GET_VAR '<this>: com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>.get' type=com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:951)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrClass.accept(IrClass.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:725)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrVariable.accept(IrVariable.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:725)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrVariable.accept(IrVariable.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1049)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 46 more
+Caused by: java.lang.IllegalStateException: No argument for parameter VALUE_PARAMETER kind:Regular name:$composer index:1 type:androidx.compose.runtime.Composer? [assignable]:
+CALL 'public final fun <get-current> ($composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): T of androidx.compose.runtime.CompositionLocal [inline] declared in androidx.compose.runtime.CompositionLocal' type=T of androidx.compose.runtime.ProvidableCompositionLocal origin=GET_PROPERTY
+  ARG <this>: TYPE_OP type=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.CompositionLocal<T of androidx.compose.runtime.CompositionLocal>
+    TYPE_OP type=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context> origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.ProvidableCompositionLocal<android.content.Context>
+      GET_FIELD 'FIELD name:receiver type:kotlin.Any? visibility:protected declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>' type=kotlin.Any? origin=null
+        receiver: GET_VAR '<this>: com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> declared in com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided>.get' type=com.example.courseapplication.EntryActivityKt.EnterForm.<no name provided> origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:571)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitExpressionBody(ExpressionCodegen.kt:939)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitExpressionBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrExpressionBody.accept(IrExpressionBody.kt:21)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 90 more
+
+
